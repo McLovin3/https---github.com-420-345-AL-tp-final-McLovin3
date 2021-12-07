@@ -1,0 +1,28 @@
+<div class="container text-center" id="game">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-warning pt-2">Welcome to BlackJack</h1>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-6 text-white">
+            <h2>Your Hand</h2>
+            <h3>{{ playerHand }}</h3>
+            <button matRipple matRippleColor="blue" *ngIf="!isLost && !isTie && !isWinner" class="btn btn-primary mx-3 w-25" (click)="hit()">Hit</button>
+            <button *ngIf="!isLost && !isTie && !isWinner" class="btn btn-danger mx-3 w-25" (click)="calculateHouse()">Stop</button>
+            <h4 class="mt-3 text-info" *ngIf="message">{{ message }}</h4>
+        </div>
+        <div class="col-6 text-white">
+            <h2>House Hand</h2>
+            <h3>{{ houseHand }}</h3>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col text-center">
+            <h2 class="text-warning" *ngIf="isWinner">YOU WIN</h2>
+            <h2 class="text-danger" *ngIf="isLost">YOU LOSE</h2>
+            <h2 class="text-white" *ngIf="isTie">IT'S A TIE</h2>
+            <button *ngIf="isLost || isWinner || isTie" class="btn btn-danger mx-3 w-25" (click)="restart()">RESTART</button>
+        </div>
+    </div>
+</div>

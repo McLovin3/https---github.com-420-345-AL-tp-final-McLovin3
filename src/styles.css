@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+body
+{
+    background-image : url("./app/images/sky.jpg") ;
+    background-size : cover ;
+}
+
+.main
+{
+    background-image : linear-gradient(to bottom, blueviolet 30%, deeppink) ;
+    min-height : 450px ;
+}
+
+#game
+{
+    background-color : green ;
+    min-height : 450px ;
+}
+
+header
+{
+    background-image : url("./app/images/arcade.jpg");
+    background-size : cover ;
+    min-height : 180px ;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

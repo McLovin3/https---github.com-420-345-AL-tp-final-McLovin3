@@ -1,0 +1,14 @@
+<div class="containter-fluid main">
+    <div class="row align-items-center">
+        <div class="col-5 mx-auto text-center">
+            <button matRipple class="btn btn-primary w-100 my-3" (click)="sujetSelectionner = 0">Sujet 1</button>
+            <button matRipple class="btn btn-primary w-100 my-3" (click)="sujetSelectionner = 1">Sujet 2</button>
+            <button matRipple class="btn btn-primary w-100 my-3" (click)="sujetSelectionner = 2">Sujet 3</button>
+        </div>
+        <div class="col-5 mx-auto bg-white rounded h-75 text-center">
+            <p *ngIf="sujetSelectionner === 0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat error aspernatur amet assumenda ea! Veritatis, atque provident repellat nam, deleniti laboriosam ratione nulla laborum explicabo suscipit commodi, vero architecto nesciunt.</p>
+            <p *ngIf="sujetSelectionner === 1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum a reiciendis quae ratione incidunt saepe provident rerum quam! Accusantium sed voluptates quidem voluptatem vitae, et corrupti veritatis sequi optio quasi!</p>
+            <p *ngIf="sujetSelectionner === 2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam minima error iste dolorum minus consequatur cupiditate, voluptatum placeat illo fuga beatae nobis saepe dignissimos nemo quod, exercitationem culpa omnis ex?</p>
+        </div>
+    </div>
+</div>
